@@ -1,0 +1,1 @@
+<p><b>Brak takiej strony ;-(</b></p>
