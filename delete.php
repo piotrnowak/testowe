@@ -1,8 +1,8 @@
 <?PHP
     $link = mysql_connect("localhost", "ziccoss", "nowak69") 
-or die ("Nie mo¿na po³¹czyæ siê z baz¹");
+or die ("Nie moï¿½na poï¿½ï¿½czyï¿½ siï¿½ z bazï¿½");
     mysql_select_db("ziccoss") 
-or die('Nie mo¿na wybraæ bazy danych: ' . mysql_error());
+or die('Nie moï¿½na wybraï¿½ bazy danych: ' . mysql_error());
 ?>
 
 <?PHP
@@ -14,7 +14,7 @@ if(isset($_GET["film"]))
 {
 $kasuj="DELETE FROM filmy WHERE ID =".$_GET["film"];
 mysql_query($kasuj);
-   echo "Usuniêto film o id: "."<b>".$_GET["film"]."</b>";
+   echo "Usuniï¿½to film o id: "."<b>".$_GET["film"]."</b>";
 }
 ?>
 <table border="1" width="100%">
@@ -24,7 +24,7 @@ mysql_query($kasuj);
 <td width="140"><b>gatunek:</b> </td>
 <td width="180"><b>produkcja:</b> </td>
 <td><b>nr:</b> </td>
-<td>Usuñ:</td>
+<td>Usuï¿½:</td>
 </tr>
 <?PHP
          while ($line = mysql_fetch_array($wynik))
@@ -36,8 +36,9 @@ mysql_query($kasuj);
                    <td align=\"center\">".$line['produkcja']."</td>
                    <td align=\"center\">".$line['nr']."</td>                                     
                    <td align=\"center\"><a href=\"index.php?page=5
-				&film=".$line['id']."\">Usuñ</a></td>
+				&film=".$line['id']."\">Usuï¿½</a></td>
                    </tr>";
           }
 ?>
 </table>
+<b></b>
